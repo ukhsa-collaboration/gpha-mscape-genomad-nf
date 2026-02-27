@@ -143,6 +143,9 @@ def generate_summary(input_genomad_run_summary_folder_path):
         "virus_summary": virus_result,
         "plasmid_summary": plasmid_result,
         "genomad_summary": genomad_json,
+        "artifacts": get_genomad_summary_file_dict(
+            input_genomad_run_summary_folder_path
+        ),
     }
 
     return return_dict
